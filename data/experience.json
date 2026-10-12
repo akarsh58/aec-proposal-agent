@@ -1,0 +1,38 @@
+[
+  {
+    "id": "EXP-101",
+    "title": "North District Municipal Operations Center",
+    "client": "Confidential municipal client",
+    "year": "2024",
+    "summary": "Design and program management for a 145,000-square-foot operations campus with phased occupancy and active-site constraints.",
+    "services": ["architecture", "program management", "stakeholder workshops", "construction administration"],
+    "outcomes": ["Issued coordinated permit documents on the approved milestone schedule", "Completed 14 documented stakeholder workshops", "Maintained operations throughout phased construction"]
+  },
+  {
+    "id": "EXP-207",
+    "title": "Regional Transit Maintenance Facility",
+    "client": "Confidential transit authority",
+    "year": "2023",
+    "summary": "Multidiscipline engineering and design for a resilient fleet maintenance facility with complex utility and equipment coordination.",
+    "services": ["civil engineering", "structural engineering", "MEP coordination", "BIM clash review"],
+    "outcomes": ["Closed documented coordination issues before issue for construction", "Developed equipment-specific utility matrices", "Delivered phased bid packages"]
+  },
+  {
+    "id": "EXP-314",
+    "title": "River County Public Safety Complex",
+    "client": "Confidential county client",
+    "year": "2025",
+    "summary": "Planning and design for an emergency operations and public safety campus with secure circulation and continuity requirements.",
+    "services": ["master planning", "architecture", "security coordination", "quality management"],
+    "outcomes": ["Maintained a requirement traceability log through design", "Completed formal quality reviews at each submission milestone", "Documented owner decisions and change impacts"]
+  },
+  {
+    "id": "EXP-422",
+    "title": "Civic Administration Building Renewal",
+    "client": "Confidential city client",
+    "year": "2022",
+    "summary": "Occupied-building renovation with accessibility, envelope, workplace, and building systems upgrades.",
+    "services": ["existing conditions assessment", "accessibility review", "architecture", "cost alignment"],
+    "outcomes": ["Sequenced work around continuous public operations", "Maintained a live risk and decision register", "Reconciled scope against estimate at each design phase"]
+  }
+]

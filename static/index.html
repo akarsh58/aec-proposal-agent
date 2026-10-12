@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Structura — Proposal Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside>
+    <div class="brand"><span class="mark">S</span><div><strong>STRUCTURA</strong><small>Proposal intelligence</small></div></div>
+    <nav>
+      <button class="nav active" data-view="requirements"><span>01</span> Requirements</button>
+      <button class="nav" data-view="experience"><span>02</span> Experience</button>
+      <button class="nav" data-view="draft"><span>03</span> Response studio</button>
+      <button class="nav" data-view="compliance"><span>04</span> Compliance</button>
+    </nav>
+    <div class="security"><div class="pulse"></div><div><b>Grounded mode</b><small>Claims require evidence</small></div></div>
+  </aside>
+  <main>
+    <header><div><p class="eyebrow">AEC PROPOSAL WORKSPACE</p><h1 id="page-title">Requirement intelligence</h1></div><div class="header-actions"><span class="model">● openrouter/free</span><a class="ghost" href="/api/export">Export response</a></div></header>
+
+    <section id="requirements" class="view active">
+      <div class="hero">
+        <div><p class="eyebrow light">NEW PURSUIT</p><h2>Turn an RFP into<br>an evidence-backed response.</h2><p>Extract obligations, retrieve approved experience, and draft grounded proposal content with traceable citations.</p></div>
+        <div class="upload-card" id="dropzone">
+          <div class="upload-icon">↑</div><h3>Drop an RFP here</h3><p>Searchable PDF · up to 25 MB</p>
+          <label class="primary">Choose PDF<input id="file" type="file" accept="application/pdf" hidden></label>
+          <button class="text-btn" id="demo">or load the demo pursuit</button>
+        </div>
+      </div>
+      <div id="workspace" class="hidden">
+        <div class="section-head"><div><p class="eyebrow">ACTIVE DOCUMENT</p><h3 id="doc-name">—</h3></div><div class="stats"><div><b id="req-count">0</b><span>requirements</span></div><div><b id="high-count">0</b><span>high priority</span></div><div><b id="draft-count">0</b><span>drafted</span></div></div></div>
+        <div class="toolbar"><div class="filters" id="filters"><button class="active" data-filter="All">All</button><button data-filter="Technical">Technical</button><button data-filter="Experience">Experience</button><button data-filter="Submission">Submission</button><button data-filter="Compliance">Compliance</button></div><input id="search" placeholder="Search requirements…"></div>
+        <div id="req-list" class="req-list"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="view">
+      <div class="section-head"><div><p class="eyebrow">APPROVED EVIDENCE</p><h2>Experience library</h2><p>Only curated records are available to the drafting agent.</p></div></div>
+      <div id="experience-list" class="experience-grid"></div>
+    </section>
+
+    <section id="draft" class="view">
+      <div class="studio-head"><div><p class="eyebrow">GROUNDED DRAFTING</p><h2>Response studio</h2></div><select id="req-select"></select></div>
+      <div class="studio-grid">
+        <div class="panel requirement-panel"><span class="label">SOURCE REQUIREMENT</span><p id="source-text">Choose a requirement to begin.</p><div id="source-meta" class="meta"></div></div>
+        <div class="panel editor-panel"><div class="editor-tools"><span class="label">RESPONSE</span><div><select id="tone"><option>confident</option><option>technical</option><option>concise</option></select><button class="primary small" id="generate">Generate</button></div></div><textarea id="editor" placeholder="Generate a grounded response or write your own…"></textarea><div class="savebar"><span id="save-state">Not saved</span><button class="ghost small" id="save">Save draft</button></div></div>
+        <div class="panel evidence-panel"><span class="label">RETRIEVED EVIDENCE</span><div id="evidence-list"><p class="muted">Evidence appears after generation.</p></div></div>
+      </div>
+    </section>
+
+    <section id="compliance" class="view">
+      <div class="section-head"><div><p class="eyebrow">FINAL QA</p><h2>Compliance matrix</h2><p>Find missing responses, unsupported claims, and unresolved evidence gaps.</p></div><button class="primary" id="run-compliance">Run evaluation</button></div>
+      <div id="compliance-summary" class="summary-cards"></div><div id="compliance-list" class="compliance-list"></div>
+    </section>
+  </main>
+</div>
+<div id="toast"></div><div id="loader"><div></div><p>Analyzing pursuit…</p></div>
+<script src="/static/app.js"></script>
+</body></html>
